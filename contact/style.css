@@ -1,0 +1,204 @@
+/* GENERAL */
+* {
+    /* border: 1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  /* WEB */
+  .container {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.766);
+    margin: 0;
+  }
+  
+  /* NAVBAR */
+  nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+  .nama {
+    display: flex;
+    padding-left: 20px;
+    float: left;
+    height: 50px;
+  }
+  
+  .nama img,
+  .nama .nama-web {
+    margin: auto;
+  }
+  
+  .nama .nama-web {
+    margin-left: 10px;
+  }
+  
+  .nav-container {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: -20px;
+  }
+  
+  .nav-container ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 0px;
+  }
+  
+  .nav-container ul li:hover {
+    background-color: #5b9fbd;
+  }
+  
+  .nav-container ul li {
+    font-size: 15px;
+    padding-right: 15px;
+    padding: 16.5px 15px;
+    box-sizing: border-box;
+  }
+  
+  .img-container {
+    position: relative;
+  }
+  
+  .img-container .layer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.452);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .nav-container ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* CONTENT */
+  .bg-img {
+    border: 1px solid green;
+    position: absolute;
+    width: 100%;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+  }
+
+  .content {
+    display: flex;
+    margin: 20px auto;
+    
+  }
+
+  .content-centering {
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    margin: 5px auto;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .content h2{
+    text-align: center;
+  }
+
+
+  .name {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .name input, form input[type="email"], .phone input, .address{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.389);
+    width: 300px;
+    box-sizing: border-box;
+    margin: 5px;
+  }
+
+  form input[type="email"], .address{
+    width: 615px;
+    margin-bottom: 10px;
+  }
+
+  .phone{
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .phone select{
+    width: 50px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 5px 0px 0px 5px;
+    position: absolute;
+    height: 37px;
+    top: 5px;
+    left: 40px;
+  }
+
+  .phone input[type="number"]{
+    width: 615px;
+    padding-left: 60px;
+  }
+
+  textarea{
+    width: 615px;
+    border: 1px solid rgba(0, 0, 0, 0.389);
+    border-radius: 5px;
+    resize: none;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  form input[type="button"]{
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.389);
+    margin-top: 20px;
+  }
+
+  .order {
+    text-align: left;
+    padding-left: 45px;
+    margin: 5px 0;
+  }
+
+/* FOOTER */
+footer {
+    background-color: white;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+footer p {
+    margin: auto;
+}
+
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 500px) {
+    body {
+    font-size: 12px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    body{
+    font-size: 10px;
+    }
+}
